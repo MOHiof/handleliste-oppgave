@@ -1,0 +1,143 @@
+/* src/App.css */
+/* MM: Styling for handleliste-kortet */
+
+/* Selve "kortet" */
+main {
+  width: 320px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 24px 22px 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Headeren */
+header h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+header p {
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+/* Seksjonstitler */
+section h2 {
+  margin: 12px 0 8px;
+  font-size: 1rem;
+}
+
+/* Skjemaet for ny vare */
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form legend {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* Label + input i en kolonne */
+form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+/* Tekst- og tall-innputtene i skjemaet */
+form input[type="text"],
+form input[type="number"] {
+  margin-top: 4px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  font-size: 0.95rem;
+  background-color: #f7f7f7;
+}
+
+/* Knappen "Legg til vare" – full bredde */
+form button {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Litt hover-effekt (ikke nødvendig, men ser fint ut) */
+form button:hover {
+  background-color: #000000;
+}
+
+/* Feilmelding */
+form p[role="alert"] {
+  margin: 2px 0 0;
+  color: darkred;
+  font-size: 0.8rem;
+}
+
+/* Seksjon "Varer i lista" */
+section[aria-labelledby="shopping-list-heading"] {
+  margin-top: 10px;
+}
+
+/* Listen med varer – ingen prikker */
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+}
+
+/* Hver vare */
+section li {
+  margin-bottom: 4px;
+}
+
+/* Navnet på varen */
+section li h3 {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+}
+
+/* Rad med checkbox, antall og vare-id */
+section li section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+/* Labelene "Kjøpt" og "Antall" på samme rad som innhold */
+section li label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+}
+
+/* Tall-innputtene i lista (litt smalere) */
+section li input[type="number"] {
+  width: 58px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  font-size: 0.85rem;
+  background-color: #f7f7f7;
+}
+
+/* Vare-ID-tekst, liten og grå */
+section li small {
+  font-size: 0.7rem;
+  color: #777777;
+}
